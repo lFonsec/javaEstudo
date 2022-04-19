@@ -23,22 +23,22 @@ public class programaEstoque {
         System.out.println(estoque.nome + " , " + estoque.preco + " , " + estoque.quantidadeEstoque);
         
         int opcao;
-        System.out.println("Digite a opcao: \n1)Adcionar quantidade no estoque. \n2)Remover quantidade no estoque. \n3)Sair.");
+        System.out.println("Digite a opcao: \n1)Adcionar quantidade no estoque. \n2)Remover quantidade no estoque. \n0)Sair.");
         opcao = sc.nextInt();
-        while(opcao != 3){
+        while(opcao != 0){
             if(opcao == 1){
                 System.out.println("Digite a quantidade: ");
                 estoque.adcionarEstoque(sc.nextInt());
             } else if(opcao == 2){
                 System.out.println("Digite a quantidade: ");
                 estoque.removerEstoque(sc.nextInt());
-            } 
+            } else if(opcao == 3){
+                System.out.println(estoque.toString());
+            }
             System.out.println();
             opcao = sc.nextInt();
-            System.out.println("Digite a opcao: \n1)Adcionar quantidade no estoque. \n2)Remover quantidade no estoque. \n3)Sair.");
-            
+            System.out.println("Digite a opcao: \n1)Adcionar quantidade no estoque. \n2)Remover quantidade no estoque. \n0)Sair.");          
         }
-        System.out.println(estoque.toString());
         sc.close();
     }
 
