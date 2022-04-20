@@ -11,4 +11,3 @@ public class Triangulo {
         return Math.sqrt(p * (p - a) * (p - b) * (p -c ));
     }
 }
-
