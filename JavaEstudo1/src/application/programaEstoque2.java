@@ -35,7 +35,6 @@ public class programaEstoque2 {
                 System.out.println(estoque.toString());
             } else if(opcao == 4){
                 System.out.println("Digite o nome: ");
-                
                 sc.nextLine();
                 estoque.setNome(sc.nextLine());
             } else if(opcao == 5){
