@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import entities.Funcionario;
+
 public class programaFuncionario {
     public static void main(String[] args){
-        
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o numero de funcionarios: ");
@@ -15,7 +15,9 @@ public class programaFuncionario {
         int idFuncionarios; 
         String nameFuncionarios;
         double salaryFuncionarios;
+
         List<Funcionario> list = new ArrayList<>();
+
         for(int i=0; i<numeroFuncionarios; i++){
             System.out.println("Digite o id do funcionario: ");
             idFuncionarios = sc.nextInt();
