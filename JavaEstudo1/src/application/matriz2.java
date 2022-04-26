@@ -17,6 +17,7 @@ public class matriz2 {
             }
         }
         System.out.println("------------");
+        
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
                 System.out.print(mat[i][j] + " ");
@@ -25,6 +26,8 @@ public class matriz2 {
                 }
             }
         }
+        System.out.println("------------");
+
         System.out.println("Digite o numero da ocorrencia: ");
         int x = sc.nextInt();
         for(int i=0; i<n; i++){
